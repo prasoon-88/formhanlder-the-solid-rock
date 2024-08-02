@@ -1,0 +1,30 @@
+$layout-background:#FFFFFF;
+$layout-foreground:#11181C;
+$layout-divider:#11111126;
+$layout-focus:#006FEE;
+
+.layout-background{
+    color: $layout-background;
+}
+.layout-foreground{
+    color: $layout-foreground;
+}
+.layout-divider{
+    color: $layout-divider;
+}
+.layout-focus{
+    color: $layout-focus;
+}
+
+.bg-layout-background{
+    background-color: $layout-background;
+}
+.bg-layout-foreground{
+    background-color: $layout-foreground;
+}
+.bg-layout-divider{
+    background-color: $layout-divider;
+}
+.bg-layout-focus{
+    background-color: $layout-focus;
+}

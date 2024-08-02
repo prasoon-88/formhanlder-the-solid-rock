@@ -1,0 +1,30 @@
+$content-1:#FFFFFF;
+$content-2: #F4F4F5;
+$content-3:#D4D4D8;
+$content-4:#D4D4D8;
+
+.content-1{
+    color: $content-1;
+}
+.content-2{
+    color: $content-2;
+}
+.content-3{
+    color: $content-3;
+}
+.content-4{
+    color: $content-4;
+}
+
+.bg-content-1{
+    background-color: $content-1;
+}
+.bg-content-2{
+    background-color: $content-2;
+}
+.bg-content-3{
+    background-color: $content-3;
+}
+.bg-content-4{
+    background-color: $content-4;
+}

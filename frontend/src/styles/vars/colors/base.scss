@@ -1,0 +1,38 @@
+$base-default:#D4D4D8;
+$base-primary:#006FEE;
+$base-secondary:#7828C8;
+$base-success:#17C964;
+$base-warning:#F5A524;
+$base-danger:#F31260;
+
+.base-default{
+    color:$base-default;
+}
+.base-primary{
+    color:$base-primary;
+}
+.base-success{
+    color:$base-success;
+}
+.base-warning{
+    color:$base-warning;
+}
+.base-danger{
+    color:$base-danger;
+}
+
+.bg-base-default{
+    background-color: $base-default;
+}
+.bg-base-primary{
+    background-color: $base-primary;
+}
+.bg-base-success{
+    background-color: $base-success;
+}
+.bg-base-warning{
+    background-color: $base-warning;
+}
+.bg-base-warning{
+    background-color: $base-warning;
+}
