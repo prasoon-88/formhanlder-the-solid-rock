@@ -1,0 +1,30 @@
+$shadow-sm: 0px 1px 2px 0px #0000000d;
+$shadow: 0px 1px 2px -1px #0000001a;
+$shadow-md: 0px 2px 4px -2px #0000001a;
+$shadow-lg: 0px 10px 15px -3px #0000001a;
+$shadow-xl: 0px 20px 25px -5px #0000001a;
+$shadow-2xl: 0px 25px 50px -12px #00000040;
+$shadow-inner: 0px 2px 4px 0px #0000000d inset;
+
+.shadow-dm {
+  box-shadow: $shadow-sm;
+}
+
+.shadow {
+  box-shadow: $shadow;
+}
+.shadow-md {
+  box-shadow: $shadow-md;
+}
+.shadow-lg {
+  box-shadow: $shadow-lg;
+}
+.shadow-xl {
+  box-shadow: $shadow-xl;
+}
+.shadow-2xl {
+  box-shadow: $shadow-2xl;
+}
+.shadow-inner {
+  box-shadow: $shadow-inner;
+}
