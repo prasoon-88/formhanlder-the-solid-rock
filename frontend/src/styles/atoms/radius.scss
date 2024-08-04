@@ -1,22 +1,22 @@
-$rounded-none: 0px;
-$rounded-sm: 8px;
-$rounded-md: 12px;
-$rounded-lg: 14px;
-$rounded-full: 50%;
+$radius-none: 0px;
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 14px;
+$radius-full: 30px;
 
-.rounded-none {
-  border-radius: $rounded-none;
+.radius-none {
+  border-radius: $radius-none;
 }
 
 .rounded-sm {
-  border-radius: $rounded-sm;
+  border-radius: $radius-sm;
 }
-.rounded-md {
-  border-radius: $rounded-md;
+.radius-md {
+  border-radius: $radius-md;
 }
-.rounded-lg {
-  border-radius: $rounded-lg;
+.radius-lg {
+  border-radius: $radius-lg;
 }
-.rounded-full {
-  border-radius: $rounded-full;
+.radius-full {
+  border-radius: $radius-full;
 }
