@@ -1,0 +1,92 @@
+@import "../../styles/atoms/colors/index.scss";
+
+@mixin inputContainer($Bgcolor: white, $color) {
+  background-color: $Bgcolor;
+  input {
+    color: $color;
+  }
+}
+
+#myInputContainer {
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+
+  &.varient-flat {
+    &.color-default {
+      @include inputContainer(white, black);
+    }
+
+    &.color-danger {
+      @include inputContainer($danger-900, $base-danger);
+    }
+
+    &.color-primary {
+      @include inputContainer($primary-900, $base-primary);
+    }
+
+    &.color-secondary {
+      @include inputContainer($secondary-900, $base-secondary);
+    }
+
+    &.color-success {
+      @include inputContainer($success-900, $base-success);
+    }
+
+    &.color-warning {
+      @include inputContainer($warning-900, $base-warning);
+    }
+  }
+
+  &.varient-bordered {
+    @extend .varient-flat;
+    background-color: white !important;
+    border: 2px solid $default-200;
+  }
+
+  &.varient-faded {
+    @extend .varient-flat;
+    background-color: transparent !important;
+    border: 2px solid $default-200;
+  }
+
+  &.varient-underlined {
+    @extend .varient-flat;
+    background-color: transparent !important;
+    border-bottom: 2px solid $default-200;
+    border-radius: 0 !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    box-shadow: none;
+  }
+
+  &.buttonSize-sm {
+    padding: 14px 12px;
+    input {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &.buttonSize-md {
+    padding: 18px 12px;
+    input {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &.buttonSize-lg {
+    padding: 20px 12px;
+    input {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
