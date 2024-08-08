@@ -1,0 +1,63 @@
+#badge{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    img{
+        object-fit: contain;
+    }
+    &.color-default{
+        background-color: #3F3F46;
+    }
+    &.color-primary{
+        background-color: $primary-500;
+    }
+    &.color-secondary{
+        background-color: $secondary-500;
+    }
+    &.color-worning{
+        background-color: $worning-500;
+    }
+    &.color-success{
+        background-color: $success-500;
+    }
+    &.color-danger{
+        background-color: $danger-500;
+    }
+    &.size-sm{
+        width: 16px;
+        height: 16px;
+    }
+    &.size-md{
+        width: 20px;
+        height:20px;
+    }
+    &.size-lg{
+        width:24px;
+        height:24px;
+    }
+
+    &.shadow-none{
+        box-shadow: 0px;
+    }
+    &.shadow-sm{
+        box-shadow: $shadow-sm;
+    }
+    &.shadow-md{
+        box-shadow: $shadow-md;
+    }
+    &.shadow-lg{
+        box-shadow: $shadow-lg;
+    }
+    &.shadow-xl {
+        box-shadow: $shadow-xl;
+      }
+      &.shadow-2xl {
+        box-shadow: $shadow-2xl;
+      }
+      &.shadow-inner {
+        box-shadow: $shadow-inner;
+      }
+}
