@@ -1,0 +1,167 @@
+@import "../../styles/atoms/colors/index.scss";
+
+#button {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.15s;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  outline: none;
+
+  &.size-sm {
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 16px;
+    gap: 6px;
+  }
+
+  &.size-md,
+  &.size-full {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 8px;
+  }
+
+  &.size-lg {
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 8px;
+  }
+
+  &.size-full {
+    width: 100%;
+  }
+
+  &.variant-solid {
+    color: white;
+    background: $base-default;
+
+    &.color-primary {
+      background: $base-primary;
+    }
+    &.color-secondary {
+      background: $base-secondary;
+    }
+    &.color-success {
+      background: $base-success;
+    }
+    &.color-danger {
+      background: $base-danger;
+    }
+    &.color-warning {
+      background: $base-warning;
+    }
+  }
+  &.variant-bordered,
+  &.variant-ghost {
+    color: white;
+    background: transparent;
+    border: 2px solid $base-default;
+
+    &.color-primary {
+      border-color: $base-primary;
+      color: $base-primary;
+    }
+    &.color-secondary {
+      border-color: $base-secondary;
+      color: $base-secondary;
+    }
+    &.color-success {
+      border-color: $base-success;
+      color: $base-success;
+    }
+    &.color-danger {
+      border-color: $base-danger;
+      color: $base-danger;
+    }
+    &.color-warning {
+      border-color: $base-warning;
+      color: $base-warning;
+    }
+  }
+  &.variant-light {
+    color: white;
+    background: transparent;
+
+    &.color-primary {
+      color: $base-primary;
+    }
+    &.color-secondary {
+      color: $base-secondary;
+    }
+    &.color-success {
+      color: $base-success;
+    }
+    &.color-danger {
+      color: $base-danger;
+    }
+    &.color-warning {
+      color: $base-warning;
+    }
+  }
+  &.variant-flat {
+    color: white;
+    background: #3f3f4666;
+
+    &.color-primary {
+      color: $base-primary;
+      background-color: #006fee33;
+    }
+    &.color-secondary {
+      color: $base-secondary;
+      background-color: #9353d333;
+    }
+    &.color-success {
+      color: $base-success;
+      background-color: #17c96433;
+    }
+    &.color-danger {
+      color: $base-danger;
+      background-color: #f3126033;
+    }
+    &.color-warning {
+      color: $base-warning;
+      background-color: #f5a52433;
+    }
+  }
+  &.variant-faded {
+    color: white;
+    border: 2px solid $base-default;
+    background: #35353507;
+    backdrop-filter: blur(10px);
+
+    &.color-primary {
+      color: $base-primary;
+    }
+    &.color-secondary {
+      color: $base-secondary;
+    }
+    &.color-success {
+      color: $base-success;
+    }
+    &.color-danger {
+      color: $base-danger;
+    }
+    &.color-warning {
+      color: $base-warning;
+    }
+  }
+  // WIP @Prasoon Asati
+  &.variant-shadow {
+    color: white;
+    background: $base-default;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
