@@ -1,3 +1,5 @@
+
+@import "../atoms/index.scss";
 #avtar{
     padding: 6px;
     margin: 6px;
@@ -11,13 +13,13 @@
         background-color: hsl(240, 5%, 26%);
     }
     &.color-primary{
-        background-color: $primary-500;
+        background-color: blue;
     }
     &.color-secondary{
         background-color: $secondary-500;
     }
     &.color-worning{
-        background-color: $worning-500;
+        background-color: $warning-500;
     }
     &.color-success{
         background-color: $success-500;
@@ -38,16 +40,16 @@
         height:56px;
     }
     &.border-none{
-        border-radius: $rounded-none;
+        border-radius: $radius-none;
     }
     &.border-sm{
-        border-radius: $rounded-sm;
+        border-radius: $radius-sm;
     }
     &.border-md{
-        border-radius: $rounded-md;
+        border-radius: $radius-md;
     }
     &.border-lg{
-        border-radius: $rounded-lg;
+        border-radius: $radius-lg;
     }
 
     &.shadow-sm{

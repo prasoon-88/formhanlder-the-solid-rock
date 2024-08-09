@@ -1,13 +1,16 @@
-
 import Avtar from "./components/Avtar";
-import Badge from "./components/Badge";
-import Input from "./components/input";
+import Button from "./components/button";
+import Checkbox from "./components/checkbox";
+
+
 function App() {
   return <div>
     <h1 className="bg-layout-divider">hello world</h1>
-    <Avtar color={"success"} size={"sm"} border={"sm"} shadow={"md"}/>
-    <Badge color={"primary"} size={"lg"} shadow={"2xl"}/>
-    <Input color="primary" varient="underlined" />
+    <Avtar color="primary" size="lg" border="lg" />
+    <Button children="click me" variant="flat" color="warning" radius="lg" size="lg"  />
+    <Checkbox color="primary" size="lg" radius="md"/>
+
+
   </div>;
 }
 

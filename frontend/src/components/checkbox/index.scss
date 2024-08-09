@@ -1,0 +1,141 @@
+@import "../../styles/atoms/colors/index.scss";
+#checkbox{
+      
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &.is-disabled {
+    cursor: not-allowed;
+  }
+  
+  input[type="checkbox"] {
+    appearance: none;
+    width: $size-lg;
+    height: $size-lg;
+    margin-right: 0.5rem;
+    border: 2px solid $color-default;
+    border-radius: $radius-sm;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      height: 50%;
+      background-color: white;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &:checked {
+      background-color: $color-primary;
+      border-color: $color-primary;
+
+      &::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    &:disabled {
+      background-color: $color-disabled;
+      border-color: $color-disabled;
+      cursor: not-allowed;
+
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .checkbox-label {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: $color-default;
+
+    &.is-disabled {
+      color: $color-disabled;
+    }
+  }
+
+  .checkbox-children {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    color: $color-default;
+
+    &.is-disabled {
+      color: $color-disabled;
+    }
+  }
+}
+
+// Color modifiers
+.color-primary {
+  input[type="checkbox"] {
+    border-color: $color-primary;
+  }
+}
+
+.color-default {
+  input[type="checkbox"] {
+    border-color: $color-default;
+  }
+}
+
+// Size modifiers
+.size-sm {
+  input[type="checkbox"] {
+    width: $size-sm;
+    height: $size-sm;
+  }
+}
+
+.size-md {
+  input[type="checkbox"] {
+    width: $size-md;
+    height: $size-md;
+  }
+}
+
+.size-lg {
+  input[type="checkbox"] {
+    width: $size-lg;
+    height: $size-lg;
+  }
+}
+
+// Radius modifiers
+.radius-none {
+  input[type="checkbox"] {
+    border-radius: $radius-none;
+  }
+}
+
+.radius-sm {
+  input[type="checkbox"] {
+    border-radius: $radius-sm;
+  }
+}
+
+.radius-md {
+  input[type="checkbox"] {
+    border-radius: $radius-md;
+  }
+}
+
+.radius-lg {
+  input[type="checkbox"] {
+    border-radius: $radius-lg;
+  }
+}
+
+}  
+        
+  
+

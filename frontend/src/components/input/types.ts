@@ -1,16 +1,10 @@
 import { HTMLProps } from "react";
-import { Radius } from "../../types/atoms";
+import { Color, Radius } from "../../types/atoms";
 
 export interface InputProps extends HTMLProps<HTMLInputElement> {
   label?: string;
   varient?: "flat" | "bordered" | "faded" | "underlined";
-  color?:
-    | "default"
-    | "primary"
-    | "secondary"
-    | "success"
-    | "danger"
-    | "warning";
+  color?:Color;
   radius?: Radius;
   buttonSize?: "sm" | "md" | "lg";
 }
